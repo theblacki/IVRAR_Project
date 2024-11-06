@@ -7,4 +7,3 @@ params:
 title: IVRAR Project
 theme: ["PaperMod"]
 baseURL: https://theblacki.github.io/IVRAR_Project
-publishDir: docs
