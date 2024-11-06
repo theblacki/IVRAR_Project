@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>IVRAR Project</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on IVRAR Project</description>
+    <generator>Hugo -- 0.137.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 Nov 2024 11:19:40 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Week1</title>
+      <link>http://localhost:1313/posts/week1/</link>
+      <pubDate>Wed, 06 Nov 2024 11:19:40 +0100</pubDate>
+      <guid>http://localhost:1313/posts/week1/</guid>
+      <description>&lt;p&gt;some text, maybe &lt;em&gt;italic&lt;/em&gt;, maybe &lt;strong&gt;bold&lt;/strong&gt;?&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
