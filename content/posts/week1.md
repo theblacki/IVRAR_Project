@@ -1,7 +1,7 @@
 +++
-date = '2024-11-06T11:19:40+01:00'
+date = '2024-11-02T11:19:40+01:00'
 draft = false
-title = 'Week1'
+title = 'Week 1'
 +++
 
 # Website Setup with HUGO
@@ -36,11 +36,15 @@ I finally tried adding some stuff to my new page, most of which worked splendidl
 
 I tested via creating a screenshot of the website and including it within:
 
-![img test text](https://theblacki.github.io/IVRAR_Project/static/img/test.png "Title img Text")
+![test screenshot](https://raw.githubusercontent.com/theblacki/IVRAR_Project/master/static/img/week1/test.png "Screenshot of the initial HUGO website")
 
 I tried adding the image under *.\static\img\* and, following the advice on the slide, later *.\static\img\firstpostname*, and referencing the image itself via https://theblacki.github.io/IVRAR_Project/static/img/test.png, as well as including the post name subfolder later, but to no avail.
 
 For that reason, I included the previously skipped *baseURL* configuration, setting it to https://theblacki.github.io/IVRAR_Project, which fortunately did not destroy the site's format, but also did not help with the image not being shown. Including the *canonifyURLs = true* configuration unfortunaltely also jumbles the page formatting up completely.
+
+In the end, the internet told me that I can solve this problem via using a *raw.githubusercontent* web URL instead, as well as including the branch, which leads the the final source https://raw.githubusercontent.com/theblacki/IVRAR_Project/master/static/img/week1/test.png - I can only guess that the approach described in the slides required some of the skipped steps within the deployment section, but who knows.
+
+I've already used up most of this day, so I will just continue with the actual XR/Unity stuff next week.
 
 <!---
 http://localhost:1313/IVRAR_Project/posts/week1/
