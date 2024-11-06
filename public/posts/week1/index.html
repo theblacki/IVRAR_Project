@@ -7,17 +7,11 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Week1 | IVRAR Project</title>
 <meta name="keywords" content="">
-<meta name="description" content="H1
-
-
-H2
-
-H3
-inline link with title
-H4
-some text, maybe italic, maybe bold?
-string test = &#34;toll&#34;;
-">
+<meta name="description" content="Website Setup with HUGO
+HUGO is used to create and publish this website for the project documentation. It was, however, the first time I created a website, as well as used HUGO.
+For that reason, the process experience shall be documented here.
+The installation
+The installation of HUGO itself went pretty straight forward. Using the documentation on the HUGO website, getting HUGO to work and creating my first post was done within an hour.">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/IVRAR_Project/posts/week1/">
 <link crossorigin="anonymous" href="/IVRAR_Project/assets/css/stylesheet.54405a410796490bc874ab6181fac9b675753cc2b91375d8f882566459eca428.css" integrity="sha256-VEBaQQeWSQvIdKthgfrJtnV1PMK5E3XY&#43;IJWZFnspCg=" rel="preload stylesheet" as="style">
@@ -118,28 +112,37 @@ string test = &#34;toll&#34;;
     
     <h1 class="post-title entry-hint-parent">
       Week1
-      <span class="entry-hint" title="Draft">
-        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
-          <path
-            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
-        </svg>
-      </span>
     </h1>
     <div class="post-meta"><span title='2024-11-06 11:19:40 +0100 CET'>November 6, 2024</span>
 
 </div>
   </header> 
-  <div class="post-content"><h1 id="h1">H1<a hidden class="anchor" aria-hidden="true" href="#h1">#</a></h1>
+  <div class="post-content"><h1 id="website-setup-with-hugo">Website Setup with HUGO<a hidden class="anchor" aria-hidden="true" href="#website-setup-with-hugo">#</a></h1>
+<p>HUGO is used to create and publish this website for the project documentation. It was, however, the first time I created a website, as well as used HUGO.
+For that reason, the process experience shall be documented here.</p>
+<h2 id="the-installation">The installation<a hidden class="anchor" aria-hidden="true" href="#the-installation">#</a></h2>
+<p>The installation of HUGO itself went pretty straight forward. Using the documentation on the <a href="https://gohugo.io/getting-started/installing/" title="HUGO installation documentation">HUGO website</a>, getting HUGO to work and creating my first post was done within an hour.</p>
+<p>Merely the existence of the extended and extended/deploy versions and their necessity were unclear to me, but installing the base version worked fine for me.</p>
+<p>For the theme, I decided on <a href="https://github.com/adityatelange/hugo-PaperMod/" title="PaperMod Repository">PaperMod</a>, simply because it was a blog theme visually appealing to me.</p>
+<h2 id="the-deployment">The Deployment<a hidden class="anchor" aria-hidden="true" href="#the-deployment">#</a></h2>
+<p>Actual problems only started cropping up when I tried hosting the site on Github via automatic deployment.</p>
+<p>I tried following the referenced <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/" title="HUGO Github Deployment Guide">Deployment Guide</a> of HUGO, which had it&rsquo;s own stumbling blocks, like not mentioning that the repository has to be public for the pages feature to be available and should be created as such, or not mentioning the actual HUGO website in the workflow.
+Should the site be pre-existant, created only afterwards, or does that not matter?</p>
+<p>Having already created the site and adding some Git shenanigans made this step take longer than what would&rsquo;ve been necessary, but in the end, everything worked out all right and the site ran without problems.</p>
+<p>The actual weirdness started only after returning to the slides to continue the setup, when I was confronted with further steps for the deployment. The deployment, which I had just finished?!
+Are the slides for an older version of the Guide/HUGO, or are they necessary for something outside of the deployment?</p>
+<p>The link (same as above) on the slides does not contain any information on making the repository remote or configuring any kind of access via SSH. The <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys" title="Managing Deploy Keys - Github Documentation">GitHub documentation</a> closest to that which I found mentioned deploy scripts, so since those seem to work on my part, I decided against going through any of the additional steps.
+That decision was reinforced when I tried adding the <strong>&ldquo;publishDir: docs&rdquo;</strong> line to the <em>hugo.yaml</em> file and seeing that the site layout was destroyed afterwards. On the website, for some reason, even the post that was still on draft was visible - though as jumbled as the rest.</p>
+<p>One thing to be mentioned is, that using the <em>config.toml</em> file is outdated and the HUGO documentation itself mentions that users should try to migrate to hugo.xy instead. I had no problems with that, though, since I started by only using the official documentation.</p>
+<h2 id="my-first-post">My first post<a hidden class="anchor" aria-hidden="true" href="#my-first-post">#</a></h2>
+<p>I finally tried adding some stuff to my new page, most of which worked splendidly. Only outlier being images, which were already marked as prone to bringing trouble.</p>
+<p>I tested via creating a screenshot of the website and including it within:</p>
+<p><img alt="img test text" loading="lazy" src="https://theblacki.github.io/IVRAR_Project/static/img/test.png" title="Title img Text"></p>
+<p>I tried adding the image under *.\static\img* and, following the advice on the slide, later <em>.\static\img\firstpostname</em>, and referencing the image itself via <a href="https://theblacki.github.io/IVRAR_Project/static/img/test.png">https://theblacki.github.io/IVRAR_Project/static/img/test.png</a>, as well as including the post name subfolder later, but to no avail.</p>
+<p>For that reason, I included the previously skipped <em>baseURL</em> configuration, setting it to <a href="https://theblacki.github.io/IVRAR_Project">https://theblacki.github.io/IVRAR_Project</a>, which fortunately did not destroy the site&rsquo;s format, but also did not help with the image not being shown. Including the <em>canonifyURLs = true</em> configuration unfortunaltely also jumbles the page formatting up completely.</p>
 <!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
-<h2 id="h2">H2<a hidden class="anchor" aria-hidden="true" href="#h2">#</a></h2>
-<p><img alt="img test text" loading="lazy" src="https://theblacki.github.io/IVRAR_Project/static/img/test.JPG" title="Title img Text"></p>
-<h3 id="h3">H3<a hidden class="anchor" aria-hidden="true" href="#h3">#</a></h3>
-<p><a href="https://www.google.com" title="Google's Homepage">inline link with title</a></p>
-<h4 id="h4">H4<a hidden class="anchor" aria-hidden="true" href="#h4">#</a></h4>
-<p>some text, maybe <em>italic</em>, maybe <strong>bold</strong>?</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">string</span> test = <span style="color:#e6db74">&#34;toll&#34;</span>;
-</span></span></code></pre></div>
+
 
   </div>
 
