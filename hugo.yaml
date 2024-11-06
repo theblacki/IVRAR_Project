@@ -3,6 +3,6 @@ languageCode: en-us
 params:
   contact:
     email: christian.goebel@stud.tu-darmstadt.de
-  subtitle: Locomotion and Interaction in XR
+  subtitle: Locomotion and Interaction in XR - Project
 title: IVRAR Project
 theme: ["PaperMod"]

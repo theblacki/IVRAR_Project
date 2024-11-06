@@ -13,7 +13,7 @@
       <link>http://localhost:1313/posts/week1/</link>
       <pubDate>Wed, 06 Nov 2024 11:19:40 +0100</pubDate>
       <guid>http://localhost:1313/posts/week1/</guid>
-      <description></description>
+      <description>&lt;p&gt;some text, maybe &lt;em&gt;italic&lt;/em&gt;, maybe &lt;strong&gt;bold&lt;/strong&gt;?&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
