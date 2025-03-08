@@ -1,7 +1,7 @@
 +++
 date = '2024-11-01T11:19:40+01:00'
 draft = false
-title = 'Week0 - Project Introduction'
+title = 'Week 0 - Project Introduction'
 +++
 
 # Project Introduction
