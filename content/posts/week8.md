@@ -27,6 +27,8 @@ Lastly, the collection of all the board's positions made it that following the b
 
 That worked surprisingly well for both problems.
 
+![New Follow-After Feature](https://raw.githubusercontent.com/theblacki/IVRAR_Project/master/static/img/week12/Mount.gif "GIF of the TeleRollingBoard with the follow-after in action")
+
 ## TeleRollingBoard Visuals
 The last thing I wanted to tackle before going into my well-deserved winter break was the TeleRollingBoard's appearance - that currently being a scaled basic 3D cube.
 

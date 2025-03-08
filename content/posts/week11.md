@@ -17,6 +17,8 @@ With the *sliderValue* being a public variable and the radius being half the glo
 
 I put two sliders on the TeleRollingBoard, one for the throwing speed multiplier and another for the effective range. I've made it so that whenever the Board is outside of the range, it's drag as well as the gravity is heavily increased.
 
+![New Slider Visuals](https://raw.githubusercontent.com/theblacki/IVRAR_Project/master/static/img/week11/TRBsliders.png "Screenshot of the TeleRollingBoard with active Sliders and without halo")
+
 The slider values were included within the TeleRollingBoard script, leading to some adaptions to existing code, e.g. the throw action from week 5:
 
 ```csharp
@@ -25,7 +27,7 @@ if (movement.magnitude > maxSpeed * speedSlider.sliderValue) movement = maxSpeed
 
 I made it so that the sliders were only active while the board was grabbed by the left hand and constrained the sliders' movement to the local x-axis in the same range as used within slider value script, making their behavior pretty much the way I intended for it to be. This is how the final sliders looked like:
 
-![New Slider Visuals](https://raw.githubusercontent.com/theblacki/IVRAR_Project/master/static/img/week11/Sliders.gif "Screenshot of the TeleRollingBoard with active Sliders and without halo")
+![New Slider Visuals GIF](https://raw.githubusercontent.com/theblacki/IVRAR_Project/master/static/img/week11/Sliders.gif "GIF of the Parkour Sliders in action")
 
 ## OnTriggerEnter/Exit shenanigans
 While debugging with the sliders, I was able to put my finger on a problem I observed before, that being the grab checks from the original game mechanics (dependent on the *OnTriggerEnter*/*Exit* methods) just did not seem to work as intended. The OnTriggerExit seems to sometimes just... trigger, even though the object is still being grabbed.

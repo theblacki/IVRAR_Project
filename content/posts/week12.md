@@ -14,6 +14,8 @@ And it was a good idea to leave this feature out until this late. equipped with 
 
 Rather, the implementation was comically easy, using the functionality of the default teleport, but without reducing it to a single instance, but happen continually while its button is pressed. Except that I don't play a teleportation sound every frame.
 
+![New Mounting Feature](https://raw.githubusercontent.com/theblacki/IVRAR_Project/master/static/img/week12/Mount.gif "GIF of the TeleRollingBoard with the mount feature in action")
+
 Less straight forward was the ability to influence the flight direction. I wanted it to work somewhat like a glider, where you could move left or right by moving the center of mass, for which i opted to use the center of both hands instead.
 
 That worked only somewhat, however, and I was not able to figure out why the same movement could lead to drastically different outcomes, going to extremes of a move leading to almost no difference in the flight path, to the same move instantly making the board crash into the ground, some hundreds of Unity units away.
@@ -54,3 +56,5 @@ rb.angularVelocity = 0.4f * remoteControlSpeed * (transform.eulerAngles - oldRot
 ```
 
 The end result works nicely, at least it does ever since I reduced the angular velocity change, which were way too powerful before.
+
+![New Remote Control Feature](https://raw.githubusercontent.com/theblacki/IVRAR_Project/master/static/img/week12/Remote.gif "GIF of the TeleRollingBoard with the remote control feature in action")
