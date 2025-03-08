@@ -5,11 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Categories | TeleRollingBoard Parcour - Project Blog</title>
+<title>Week 2 - Idea Conceptualization and First Presentation Preparation | TeleRollingBoard Parcour - Project Blog</title>
 <meta name="keywords" content="">
-<meta name="description" content="">
+<meta name="description" content="Idea Conceptualization and First Presentation Preparation
+Before being able to get started with the project, the core ideal and goal have to be defined and conceptualized. Premised on the project requirements, the concept should integrate both locomotion in and interaction with the game world.
+Self- vs. object-based locomotion
+Instead of directly deciding upon a concept, I first tried to make smaller decisions for the direction. Primarily, I differentiated between what I would call self-based and object-based locomotion.">
 <meta name="author" content="Christian Goebel">
-<link rel="canonical" href="http://localhost:1313/IVRAR_Project/categories/">
+<link rel="canonical" href="http://localhost:1313/IVRAR_Project/posts/week2/">
 <link crossorigin="anonymous" href="/IVRAR_Project/assets/css/stylesheet.54405a410796490bc874ab6181fac9b675753cc2b91375d8f882566459eca428.css" integrity="sha256-VEBaQQeWSQvIdKthgfrJtnV1PMK5E3XY&#43;IJWZFnspCg=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/IVRAR_Project/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/IVRAR_Project/favicon-16x16.png">
@@ -18,8 +21,7 @@
 <link rel="mask-icon" href="http://localhost:1313/IVRAR_Project/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/IVRAR_Project/categories/index.xml">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/IVRAR_Project/categories/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/IVRAR_Project/posts/week2/">
 <noscript>
     <style>
         #theme-toggle,
@@ -59,7 +61,7 @@
 </noscript>
 </head>
 
-<body class="list" id="top">
+<body class="" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -103,12 +105,49 @@
     </nav>
 </header>
 <main class="main">
-<header class="page-header">
-    <h1>Categories</h1>
-</header>
 
-<ul class="terms-tags">
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Week 2 - Idea Conceptualization and First Presentation Preparation
+    </h1>
+    <div class="post-meta"><span title='2024-11-10 11:19:40 +0100 CET'>November 10, 2024</span>&nbsp;·&nbsp;Christian Goebel
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="idea-conceptualization-and-first-presentation-preparation">Idea Conceptualization and First Presentation Preparation<a hidden class="anchor" aria-hidden="true" href="#idea-conceptualization-and-first-presentation-preparation">#</a></h1>
+<p>Before being able to get started with the project, the core ideal and goal have to be defined and conceptualized. Premised on the project requirements, the concept should integrate both locomotion in and interaction with the game world.</p>
+<h2 id="self--vs-object-based-locomotion">Self- vs. object-based locomotion<a hidden class="anchor" aria-hidden="true" href="#self--vs-object-based-locomotion">#</a></h2>
+<p>Instead of directly deciding upon a concept, I first tried to make smaller decisions for the direction. Primarily, I differentiated between what I would call self-based and object-based locomotion.</p>
+<p>In the examples we saw as part of the lecture, the bow and arrow, which make the user teleport to the spot shot, would be categorized as the object-based kind, the default flying one as a self-based one, and the boat with a paddle as something in between.</p>
+<p>The first question was thus, which of the approaches I would want to make the focus of my implementation. The problem with that, of course, being that i missed any kind of experience that could actually influence this decision. Instead, my decision was only influenced by rather superficial reasons:</p>
+<ul>
+<li>Which approach would make more fun? Both should make plenty if done correctly.</li>
+<li>Which one could lead to more (implementation) problems? With my development experience, both. However, considering the even lower amount of experience with XR development, self-based could probably lead to encountering more XR specific problems.</li>
+<li>Do I want to include actual self-movement (as in walking)? Considering the amount of space available in my development space (my home), definitely no. Better yet would be a concept that could be executed while sitting.</li>
+<li>Which approach would lead to more likeliness of motion sickness? Considering there&rsquo;ll be no self-movement, teleportation will probably be the only surefire way of circumventing motion sickness. For that, I expect object-based locomotion to be preferable.</li>
 </ul>
+<p>That said, I opted for an object-based locomotion technique.</p>
+<h2 id="but-what-object">But what object?<a hidden class="anchor" aria-hidden="true" href="#but-what-object">#</a></h2>
+<p>Since I decided upon having an object as the basis of my locomotion, I also wanted to have my entire interaction additionally to the locomotion based upon this object. The object should be in the center of the gameplay - and thus the user&rsquo;s attention.</p>
+<p>So, if the locomotion is going to be teleportation based and dependent of the interaction with said object, what should that interaction look like?</p>
+<p>The first idea, thanks to the example videos from the lecture, would be to shoot something somewhere and (opt to) teleport there afterwards, but nevermind that feeling like a cop-out for any kind of gun-like object, more interesting objects would mostly include more - let&rsquo;s say - expressionistic gesticulation, which would be harder in the works-while-sitting approach I imagined.</p>
+<p>Also, wouldn&rsquo;t a more direct kind of interaction be more fulfilling? One where you don&rsquo;t just handle your object in some way to get to where you are, but you actively have to get the object to where you want it? Like&hellip; throwing?</p>
+<p>Now the only thing to consider is how I want the object to behave when thrown, with two ideas primarily worth considering: The object can either be very aerodynamic or even flyable, or it can roll farther or even be driven. Considering that I want to teleport to the object once it got to where I want it to be, and I don&rsquo;T want to make a flying game, I decided upon the latter.</p>
+<p>And that is how the idea was determined: What I want to create is a throwable, rollable teleporter - or in short, a <strong>TeleRollingBoard</strong>.</p>
+<h2 id="project-pitch-creation">Project Pitch Creation<a hidden class="anchor" aria-hidden="true" href="#project-pitch-creation">#</a></h2>
+<p>With that, I already got a good project name for the pitch next week.</p>
+<p>After adding a couple of images to better convey the idea and marking a few keypoints, the <a href="https://docs.google.com/presentation/d/1HSSrnwskiwQ3RpPzYqDUE6AA4t3aTac4cEoAFSCfJhs/edit?usp=sharing" title="The project pitch google docs presentation">project pitch</a> was finished.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
     </main>
     
 <footer class="footer">

@@ -1,23 +1,184 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on IVRAR Project</title>
+    <title>Posts on TeleRollingBoard Parcour - Project Blog</title>
     <link>http://localhost:1313/IVRAR_Project/posts/</link>
-    <description>Recent content in Posts on IVRAR Project</description>
-    <generator>Hugo -- 0.137.1</generator>
+    <description>Recent content in Posts on TeleRollingBoard Parcour - Project Blog</description>
+    <generator>Hugo -- 0.143.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Nov 2024 11:19:40 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 05 Mar 2025 11:42:29 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/IVRAR_Project/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Week1</title>
+      <title>Week 18 - New Metrics and Study</title>
+      <link>http://localhost:1313/IVRAR_Project/posts/week18/</link>
+      <pubDate>Wed, 05 Mar 2025 11:42:29 +0100</pubDate>
+      <guid>http://localhost:1313/IVRAR_Project/posts/week18/</guid>
+      <description>&lt;h1 id=&#34;new-metrics-and-study&#34;&gt;New Metrics and Study&lt;/h1&gt;
+&lt;p&gt;Before the study execution could begin, I had to include all the metrics I wanted to gather into the game. Good that I already gave that some thought for my final presentation.&lt;/p&gt;
+&lt;h2 id=&#34;metrics&#34;&gt;Metrics&lt;/h2&gt;
+&lt;p&gt;I included more metrics specific to my project with its many kinds of interaction techniques. Of course, the default interaction task metrics and global times were still measured.&lt;/p&gt;
+&lt;p&gt;Additionally, the frequency of use of the different techniques, including throws and callbacks, as well as the average distance to the ground were all monitored.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Week 16 and 17 - Working on the Blog</title>
+      <link>http://localhost:1313/IVRAR_Project/posts/week16_17/</link>
+      <pubDate>Tue, 25 Feb 2025 10:53:12 +0100</pubDate>
+      <guid>http://localhost:1313/IVRAR_Project/posts/week16_17/</guid>
+      <description>&lt;h1 id=&#34;working-on-the-blog&#34;&gt;Working on the Blog&lt;/h1&gt;
+&lt;p&gt;These two weeks I spent only with working on the blog and uploading the videos I created previously to Youtube so that they can be embedded into the blog.&lt;/p&gt;
+&lt;p&gt;The only other thing worth mentioning was that I found myself two of my friends who I was able to talk into helping with the study once the time came. And it only cost me two ice pops.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Week 15 - APK Madness and Final Presentation</title>
+      <link>http://localhost:1313/IVRAR_Project/posts/week15/</link>
+      <pubDate>Mon, 10 Feb 2025 10:52:33 +0100</pubDate>
+      <guid>http://localhost:1313/IVRAR_Project/posts/week15/</guid>
+      <description>&lt;h1 id=&#34;apk-madness-and-final-presentation&#34;&gt;APK Madness and Final Presentation&lt;/h1&gt;
+&lt;p&gt;Since everything&amp;rsquo;s finished up, I can basically start leaning back already, right? Just deploy my APK once to see if it&amp;rsquo;s actually running, and I&amp;rsquo;m good to go&amp;hellip; right? Who would have known that this simple step would take me one full, additional week&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;the-apk-doesnt-run&#34;&gt;The APK doesn&amp;rsquo;t run&lt;/h2&gt;
+&lt;p&gt;Building the APK was as easy as one would expect, as was deploying it on the Meta Quest 2 via SideQuest. Just one little problem: When I tried starting it after deployment, it just instantly closed, not giving me any more feedback as to why that happened.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Week 14 - Game Mechanics Tweaking and Repair</title>
+      <link>http://localhost:1313/IVRAR_Project/posts/week14/</link>
+      <pubDate>Sat, 01 Feb 2025 10:51:49 +0100</pubDate>
+      <guid>http://localhost:1313/IVRAR_Project/posts/week14/</guid>
+      <description>&lt;h1 id=&#34;game-mechanics-tweaking-and-repair&#34;&gt;Game Mechanics Tweaking and Repair&lt;/h1&gt;
+&lt;p&gt;Two weeks before the final presentation, it was finally time to take another look at the original game mechanics - that being the parkour relevant scripts.&lt;/p&gt;
+&lt;h2 id=&#34;original-game-mechanics&#34;&gt;Original Game Mechanics&lt;/h2&gt;
+&lt;p&gt;As it turned out, even though I included the still relevant parts from the original scripts, the actual parkour did not quite work at the start of this week.&lt;/p&gt;
+&lt;p&gt;Even though this was only the result of some missing references, it made me take a closer look at an area of my game that still needed some straightening.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Week 13 - Minor setbacks</title>
+      <link>http://localhost:1313/IVRAR_Project/posts/week13/</link>
+      <pubDate>Sat, 25 Jan 2025 10:48:22 +0100</pubDate>
+      <guid>http://localhost:1313/IVRAR_Project/posts/week13/</guid>
+      <description>&lt;h1 id=&#34;minor-setbacks&#34;&gt;Minor setbacks&lt;/h1&gt;
+&lt;p&gt;This week I tried to work through a couple of things in my backlog. I still had to get the actual parkour working again, but I decided to tackle other things first, so as to not break the mechanics again.&lt;/p&gt;
+&lt;h2 id=&#34;remote-grabbing&#34;&gt;Remote Grabbing&lt;/h2&gt;
+&lt;p&gt;I wanted the teleport back of the board to not just be a teleport, but instead to lay it in the left hand, the same as if grabbed, maybe even that. Unfortunately, I was unable to find a way to set a grabbed object of the interaction rig. That is another one of those &amp;ldquo;obvious&amp;rdquo; features I&amp;rsquo;d just expect, like the isGrabbing bool from week 11.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Week 12 - Mounting the TRB and Remote Control</title>
+      <link>http://localhost:1313/IVRAR_Project/posts/week12/</link>
+      <pubDate>Sat, 18 Jan 2025 10:48:22 +0100</pubDate>
+      <guid>http://localhost:1313/IVRAR_Project/posts/week12/</guid>
+      <description>&lt;h1 id=&#34;mounting-the-trb-and-remote-control&#34;&gt;Mounting the TRB and Remote Control&lt;/h1&gt;
+&lt;p&gt;This week I implemented two new locomotion and interaction features, one being planned since the interim report, the other being another idea from the discussions thereafter.&lt;/p&gt;
+&lt;h2 id=&#34;flying-and-riding-on-the-telerollingboard&#34;&gt;Flying and Riding on the TeleRollingBoard&lt;/h2&gt;
+&lt;p&gt;One more idea from the report discussions outside the follow-after feature was to be able to fly on top of the thrown board. While I agreed at that time that it would be a nice feature, I did not expect to actually get to trying to implement it. Well, here we are.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Week 11 - In-world Settings Control</title>
+      <link>http://localhost:1313/IVRAR_Project/posts/week11/</link>
+      <pubDate>Sun, 12 Jan 2025 10:48:22 +0100</pubDate>
+      <guid>http://localhost:1313/IVRAR_Project/posts/week11/</guid>
+      <description>&lt;h1 id=&#34;in-world-settings-control&#34;&gt;In-world Settings Control&lt;/h1&gt;
+&lt;p&gt;This week, I recognized that not being able to tweak stuff in Unity while wearing the VR headset is rather inconvenient. More than that, some of the regulators could be nice to be chosen by the players themselves. So, that became my goal for this week.&lt;/p&gt;
+&lt;h2 id=&#34;settings-sliders-on-the-board&#34;&gt;Settings Sliders on the Board&lt;/h2&gt;
+&lt;p&gt;I put Sliders, consisting of a rectangle (to visualize the mechanic range of the slider) and a ball on top of the TeleRollingBoard and furnished it with a &lt;em&gt;TMP&lt;/em&gt; label. Each slider got a grabbable interaction, like the board itself has one, as well as a script that just computed and provided the current value:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Week 9 and 10 - Winter Vacation</title>
+      <link>http://localhost:1313/IVRAR_Project/posts/week9_10/</link>
+      <pubDate>Sat, 04 Jan 2025 10:48:22 +0100</pubDate>
+      <guid>http://localhost:1313/IVRAR_Project/posts/week9_10/</guid>
+      <description>&lt;h1 id=&#34;winter-vacation&#34;&gt;Winter Vacation&lt;/h1&gt;
+&lt;p&gt;Nothing happened these two weeks, as I enjoyed Christmas, new year&amp;rsquo;s and the vacation around.&lt;/p&gt;
+&lt;p&gt;I played through Drova in that time, fun game, though not quite XR related.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Week 8 - The Follow-after Feature and actual Visuals</title>
+      <link>http://localhost:1313/IVRAR_Project/posts/week8/</link>
+      <pubDate>Mon, 23 Dec 2024 11:19:40 +0100</pubDate>
+      <guid>http://localhost:1313/IVRAR_Project/posts/week8/</guid>
+      <description>&lt;h1 id=&#34;the-follow-after-feature-and-actual-visuals&#34;&gt;The Follow-after Feature and actual Visuals&lt;/h1&gt;
+&lt;p&gt;The report presentation - or rather the discussion thereafter gave me some new ideas to work on, some of which I started on this week.&lt;/p&gt;
+&lt;h2 id=&#34;hand-poses&#34;&gt;Hand Poses&lt;/h2&gt;
+&lt;p&gt;As mentioned in the presentation slides, I was inspired by the reverse classroom topic of another student and wanted to get hand poses for my TeleRollingBoard, meaning positions and orientations of the hands grabbing onto it.&lt;/p&gt;
+&lt;p&gt;As it turns out, those don&amp;rsquo;t quite work when you use the controllers (visuals) - obviously - but I only thought of that after getting the creation of hand poses working - which differs heavily from how it was shown in the reverse classroom to the way it works now and with the Meta XR All-In-One Kit.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Week 7 - Adaptations and Interim Report Preparation</title>
+      <link>http://localhost:1313/IVRAR_Project/posts/week7/</link>
+      <pubDate>Sun, 15 Dec 2024 11:19:40 +0100</pubDate>
+      <guid>http://localhost:1313/IVRAR_Project/posts/week7/</guid>
+      <description>&lt;h1 id=&#34;adaptations-and-interim-report-preparation&#34;&gt;Adaptations and Interim Report Preparation&lt;/h1&gt;
+&lt;p&gt;This week, I included the original game mechanics back into the game, which mostly got lost after switching the VR Player Rig with the one from the All-In-One kit.&lt;/p&gt;
+&lt;p&gt;Since I developed everything of my locomotion and board-interaction in my own scripts, much of the original mechanics could be thrown out, the remainder, especially the collision interactions (with banners, tasks and coins) were put into their own script and added to the Rig&amp;rsquo;s main body collider. With that, the &lt;em&gt;LocomotionTechnique&lt;/em&gt; and &lt;em&gt;MyGrab&lt;/em&gt; scripts were officially replaced and thusly removed.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Week 6 - TRB Improvements</title>
+      <link>http://localhost:1313/IVRAR_Project/posts/week6/</link>
+      <pubDate>Sat, 07 Dec 2024 11:19:40 +0100</pubDate>
+      <guid>http://localhost:1313/IVRAR_Project/posts/week6/</guid>
+      <description>&lt;h1 id=&#34;trb-improvements&#34;&gt;TRB Improvements&lt;/h1&gt;
+&lt;p&gt;This week, again, I worked on the TeleRollingBoard itself, improving different aspects of its behavior.&lt;/p&gt;
+&lt;h2 id=&#34;gameobject-adaptations&#34;&gt;GameObject Adaptations&lt;/h2&gt;
+&lt;p&gt;I added some teleporter sounds to the TeleRollingBoard, one constant humming to make it easier to find when not in sight, and a whooshing sound effect when the player uses the teleport action. This probably marks the last changes I do with regards to sound, as including rolling, flying and impact sounds would probably lead to more headaches than it is worth. Also, the background music has not made me lose my mind, yet.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Week 5 - First Implementation of the TRB</title>
+      <link>http://localhost:1313/IVRAR_Project/posts/week5/</link>
+      <pubDate>Sun, 01 Dec 2024 11:19:40 +0100</pubDate>
+      <guid>http://localhost:1313/IVRAR_Project/posts/week5/</guid>
+      <description>&lt;h1 id=&#34;first-implementation-of-the-trb&#34;&gt;First Implementation of the TRB&lt;/h1&gt;
+&lt;p&gt;This week I implemented the first playable, or rather interactable version of the TeleRollingBoard.&lt;/p&gt;
+&lt;h2 id=&#34;working-with-the-xr-interaction-rig&#34;&gt;Working with the XR Interaction Rig&lt;/h2&gt;
+&lt;p&gt;There are two major areas which I worked on this week, one being the as-of-yet pseudo code in the new script mentioned last week, the other being the XR functionalities within Unity.&lt;/p&gt;
+&lt;p&gt;The more straight-forward part is adding the grabbable interaction on the TeleRollingBoard GameObject. Doing that just as I did for the Roll-A-Ball VR integration worked just as straight forward as I remembered it. Doing so also put a &lt;em&gt;RigidBody&lt;/em&gt; and a &lt;em&gt;Collider&lt;/em&gt; on my object, both of which I&amp;rsquo;d need either way - at least I thought so at that time.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Week 4 - Post Processing Presentation Preparation</title>
+      <link>http://localhost:1313/IVRAR_Project/posts/week4/</link>
+      <pubDate>Mon, 25 Nov 2024 11:19:40 +0100</pubDate>
+      <guid>http://localhost:1313/IVRAR_Project/posts/week4/</guid>
+      <description>&lt;h1 id=&#34;post-processing-presentation-preparation&#34;&gt;Post Processing Presentation Preparation&lt;/h1&gt;
+&lt;p&gt;This week, I prepared my presentation for the Reverse Classroom tomorrow. My topic was &lt;strong&gt;Post Processing&lt;/strong&gt;, something I&amp;rsquo;ve never done/used before.&lt;/p&gt;
+&lt;p&gt;Unfortunately, most of the post processing techniques are about colors, which is not quite that interesting for someone with color blindness, but there were still some means useful to me, especially the vignette effect already mentioned in the lecture, that is supposed to reduce motion sickness in VR - which should prove to be useful in a XR project.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Week 3 - Project Start</title>
+      <link>http://localhost:1313/IVRAR_Project/posts/week3/</link>
+      <pubDate>Fri, 15 Nov 2024 11:19:40 +0100</pubDate>
+      <guid>http://localhost:1313/IVRAR_Project/posts/week3/</guid>
+      <description>&lt;h1 id=&#34;project-start&#34;&gt;Project Start&lt;/h1&gt;
+&lt;p&gt;This week I started on the actual project, though I did not yet get all that far.&lt;/p&gt;
+&lt;h2 id=&#34;roll-a-ball-vr&#34;&gt;Roll-A-Ball VR&lt;/h2&gt;
+&lt;p&gt;Since I&amp;rsquo;ve already had experience with working with Unity, I opted not to implement a Roll-A-Ball Game before. Not so for the XR Version though, so I imported the package provided and followed the instructions to get the VR integration running. I encountered no problems doing so.&lt;/p&gt;
+&lt;p&gt;Getting it running with Meta Quest Link also did not pose any problems. I decided that once I had some time, I&amp;rsquo;d try out playing some games on my Meta Quest 2.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Week 2 - Idea Conceptualization and First Presentation Preparation</title>
+      <link>http://localhost:1313/IVRAR_Project/posts/week2/</link>
+      <pubDate>Sun, 10 Nov 2024 11:19:40 +0100</pubDate>
+      <guid>http://localhost:1313/IVRAR_Project/posts/week2/</guid>
+      <description>&lt;h1 id=&#34;idea-conceptualization-and-first-presentation-preparation&#34;&gt;Idea Conceptualization and First Presentation Preparation&lt;/h1&gt;
+&lt;p&gt;Before being able to get started with the project, the core ideal and goal have to be defined and conceptualized. Premised on the project requirements, the concept should integrate both locomotion in and interaction with the game world.&lt;/p&gt;
+&lt;h2 id=&#34;self--vs-object-based-locomotion&#34;&gt;Self- vs. object-based locomotion&lt;/h2&gt;
+&lt;p&gt;Instead of directly deciding upon a concept, I first tried to make smaller decisions for the direction. Primarily, I differentiated between what I would call self-based and object-based locomotion.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Week 1 - Website Setup with HUGO</title>
       <link>http://localhost:1313/IVRAR_Project/posts/week1/</link>
-      <pubDate>Wed, 06 Nov 2024 11:19:40 +0100</pubDate>
+      <pubDate>Sat, 02 Nov 2024 11:19:40 +0100</pubDate>
       <guid>http://localhost:1313/IVRAR_Project/posts/week1/</guid>
       <description>&lt;h1 id=&#34;website-setup-with-hugo&#34;&gt;Website Setup with HUGO&lt;/h1&gt;
 &lt;p&gt;HUGO is used to create and publish this website for the project documentation. It was, however, the first time I created a website, as well as used HUGO.
 For that reason, the process experience shall be documented here.&lt;/p&gt;
 &lt;h2 id=&#34;the-installation&#34;&gt;The installation&lt;/h2&gt;
 &lt;p&gt;The installation of HUGO itself went pretty straight forward. Using the documentation on the &lt;a href=&#34;https://gohugo.io/getting-started/installing/&#34; title=&#34;HUGO installation documentation&#34;&gt;HUGO website&lt;/a&gt;, getting HUGO to work and creating my first post was done within an hour.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Week0 - Project Introduction</title>
+      <link>http://localhost:1313/IVRAR_Project/posts/week0/</link>
+      <pubDate>Fri, 01 Nov 2024 11:19:40 +0100</pubDate>
+      <guid>http://localhost:1313/IVRAR_Project/posts/week0/</guid>
+      <description>&lt;h1 id=&#34;project-introduction&#34;&gt;Project Introduction&lt;/h1&gt;
+&lt;p&gt;In the context of the lecture &lt;em&gt;Interaction in Augmented Reality and Virtual Reality&lt;/em&gt; (IARVR or IVRAR), I created a VR application tasking the user to overcome a parkour.&lt;/p&gt;
+&lt;p&gt;The idea is that the XR environment provides a completely new context of perception and interaction, with the rather obvious problem of having to design applications around these exact new systems and tools.&lt;/p&gt;
+&lt;p&gt;More specific, the task is to design methods of interaction and locomotion within a VR environment and implement them in a way that makes both testable. In the base implementation provided, this is accomplished via route to be covered, as well as object interaction tasks on its checkpoints that have to be solved, as well as coins to be collected on the way.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

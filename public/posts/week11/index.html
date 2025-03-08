@@ -5,11 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Categories | TeleRollingBoard Parcour - Project Blog</title>
+<title>Week 11 - In-world Settings Control | TeleRollingBoard Parcour - Project Blog</title>
 <meta name="keywords" content="">
-<meta name="description" content="">
+<meta name="description" content="In-world Settings Control
+This week, I recognized that not being able to tweak stuff in Unity while wearing the VR headset is rather inconvenient. More than that, some of the regulators could be nice to be chosen by the players themselves. So, that became my goal for this week.
+Settings Sliders on the Board
+I put Sliders, consisting of a rectangle (to visualize the mechanic range of the slider) and a ball on top of the TeleRollingBoard and furnished it with a TMP label. Each slider got a grabbable interaction, like the board itself has one, as well as a script that just computed and provided the current value:">
 <meta name="author" content="Christian Goebel">
-<link rel="canonical" href="http://localhost:1313/IVRAR_Project/categories/">
+<link rel="canonical" href="http://localhost:1313/IVRAR_Project/posts/week11/">
 <link crossorigin="anonymous" href="/IVRAR_Project/assets/css/stylesheet.54405a410796490bc874ab6181fac9b675753cc2b91375d8f882566459eca428.css" integrity="sha256-VEBaQQeWSQvIdKthgfrJtnV1PMK5E3XY&#43;IJWZFnspCg=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/IVRAR_Project/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/IVRAR_Project/favicon-16x16.png">
@@ -18,8 +21,7 @@
 <link rel="mask-icon" href="http://localhost:1313/IVRAR_Project/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/IVRAR_Project/categories/index.xml">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/IVRAR_Project/categories/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/IVRAR_Project/posts/week11/">
 <noscript>
     <style>
         #theme-toggle,
@@ -59,7 +61,7 @@
 </noscript>
 </head>
 
-<body class="list" id="top">
+<body class="" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -103,12 +105,40 @@
     </nav>
 </header>
 <main class="main">
-<header class="page-header">
-    <h1>Categories</h1>
-</header>
 
-<ul class="terms-tags">
-</ul>
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Week 11 - In-world Settings Control
+    </h1>
+    <div class="post-meta"><span title='2025-01-12 10:48:22 +0100 CET'>January 12, 2025</span>&nbsp;·&nbsp;Christian Goebel
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="in-world-settings-control">In-world Settings Control<a hidden class="anchor" aria-hidden="true" href="#in-world-settings-control">#</a></h1>
+<p>This week, I recognized that not being able to tweak stuff in Unity while wearing the VR headset is rather inconvenient. More than that, some of the regulators could be nice to be chosen by the players themselves. So, that became my goal for this week.</p>
+<h2 id="settings-sliders-on-the-board">Settings Sliders on the Board<a hidden class="anchor" aria-hidden="true" href="#settings-sliders-on-the-board">#</a></h2>
+<p>I put Sliders, consisting of a rectangle (to visualize the mechanic range of the slider) and a ball on top of the TeleRollingBoard and furnished it with a <em>TMP</em> label. Each slider got a grabbable interaction, like the board itself has one, as well as a script that just computed and provided the current value:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>sliderValue = (slider.localPosition.x + radius) / (<span style="color:#ae81ff">2</span> * radius);
+</span></span></code></pre></div><p>With the <em>sliderValue</em> being a public variable and the radius being half the global length of the mechanic range.</p>
+<p>I put two sliders on the TeleRollingBoard, one for the throwing speed multiplier and another for the effective range. I&rsquo;ve made it so that whenever the Board is outside of the range, it&rsquo;s drag as well as the gravity is heavily increased.</p>
+<p>The slider values were included within the TeleRollingBoard script, leading to some adaptions to existing code, e.g. the throw action from week 5:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (movement.magnitude &gt; maxSpeed * speedSlider.sliderValue) movement = maxSpeed * speedSlider.sliderValue * movement.normalized;
+</span></span></code></pre></div><p>I made it so that the sliders were only active while the board was grabbed by the left hand and constrained the sliders&rsquo; movement to the local x-axis in the same range as used within slider value script, making their behavior pretty much the way I intended for it to be. This is how the final sliders looked like:</p>
+<p><img alt="New Slider Visuals" loading="lazy" src="https://raw.githubusercontent.com/theblacki/IVRAR_Project/master/static/img/week11/TRBsliders.png" title="Screenshot of the TeleRollingBoard with active Sliders and without halo"></p>
+<h2 id="ontriggerenterexit-shenanigans">OnTriggerEnter/Exit shenanigans<a hidden class="anchor" aria-hidden="true" href="#ontriggerenterexit-shenanigans">#</a></h2>
+<p>While debugging with the sliders, I was able to put my finger on a problem I observed before, that being the grab checks from the original game mechanics (dependent on the <em>OnTriggerEnter</em>/<em>Exit</em> methods) just did not seem to work as intended. The OnTriggerExit seems to sometimes just&hellip; trigger, even though the object is still being grabbed.</p>
+<p>I searched for a in-house solution from the XR kit, but was not successful in finding one. I still feel like there has to be one, as that would just be, well, obvious, but for the moment I fixed the problem by making the state switch dependent on the triggers held - or not held, more specifically.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
     </main>
     
 <footer class="footer">

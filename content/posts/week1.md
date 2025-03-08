@@ -1,7 +1,7 @@
 +++
 date = '2024-11-02T11:19:40+01:00'
 draft = false
-title = 'Week 1'
+title = 'Week 1 - Website Setup with HUGO'
 +++
 
 # Website Setup with HUGO
@@ -19,7 +19,7 @@ For the theme, I decided on [PaperMod](https://github.com/adityatelange/hugo-Pap
 Actual problems only started cropping up when I tried hosting the site on Github via automatic deployment.
 
 I tried following the referenced [Deployment Guide](https://gohugo.io/hosting-and-deployment/hosting-on-github/ "HUGO Github Deployment Guide") of HUGO, which had it's own stumbling blocks, like not mentioning that the repository has to be public for the pages feature to be available and should be created as such, or not mentioning the actual HUGO website in the workflow.
-Should the site be pre-existant, created only afterwards, or does that not matter?
+Should the site be pre-existent, created only afterwards, or does that not matter?
 
 Having already created the site and adding some Git shenanigans made this step take longer than what would've been necessary, but in the end, everything worked out all right and the site ran without problems.
 
@@ -42,17 +42,6 @@ I tried adding the image under *.\static\img\* and, following the advice on the 
 
 For that reason, I included the previously skipped *baseURL* configuration, setting it to https://theblacki.github.io/IVRAR_Project, which fortunately did not destroy the site's format, but also did not help with the image not being shown. Including the *canonifyURLs = true* configuration unfortunaltely also jumbles the page formatting up completely.
 
-In the end, the internet told me that I can solve this problem via using a *raw.githubusercontent* web URL instead, as well as including the branch, which leads the the final source https://raw.githubusercontent.com/theblacki/IVRAR_Project/master/static/img/week1/test.png - I can only guess that the approach described in the slides required some of the skipped steps within the deployment section, but who knows.
+In the end, the internet told me that I can solve this problem via using a *raw.githubusercontent* web URL instead, as well as including the branch, which leads to the final source https://raw.githubusercontent.com/theblacki/IVRAR_Project/master/static/img/week1/test.png - I can only guess that the approach described in the slides required some of the skipped steps within the deployment section, but who knows.
 
 I've already used up most of this day, so I will just continue with the actual XR/Unity stuff next week.
-
-<!---
-http://localhost:1313/IVRAR_Project/posts/week1/
-### H3
-[inline link with title](https://www.google.com "Google's Homepage")
-#### H4
-some text, maybe *italic*, maybe **bold**?
-```csharp
-string test = "toll";
-```
--->

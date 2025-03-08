@@ -2,14 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/IVRAR_Project/</loc>
-    <lastmod>2024-11-06T11:19:40+01:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/IVRAR_Project/posts/</loc>
-    <lastmod>2024-11-06T11:19:40+01:00</lastmod>
+    <lastmod>2025-03-05T11:42:29+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/IVRAR_Project/</loc>
+    <lastmod>2025-03-05T11:42:29+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/IVRAR_Project/posts/week18/</loc>
+    <lastmod>2025-03-05T11:42:29+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/IVRAR_Project/posts/week16_17/</loc>
+    <lastmod>2025-02-25T10:53:12+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/IVRAR_Project/posts/week15/</loc>
+    <lastmod>2025-02-10T10:52:33+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/IVRAR_Project/posts/week14/</loc>
+    <lastmod>2025-02-01T10:51:49+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/IVRAR_Project/posts/week13/</loc>
+    <lastmod>2025-01-25T10:48:22+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/IVRAR_Project/posts/week12/</loc>
+    <lastmod>2025-01-18T10:48:22+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/IVRAR_Project/posts/week11/</loc>
+    <lastmod>2025-01-12T10:48:22+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/IVRAR_Project/posts/week9_10/</loc>
+    <lastmod>2025-01-04T10:48:22+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/IVRAR_Project/posts/week8/</loc>
+    <lastmod>2024-12-23T11:19:40+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/IVRAR_Project/posts/week7/</loc>
+    <lastmod>2024-12-15T11:19:40+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/IVRAR_Project/posts/week6/</loc>
+    <lastmod>2024-12-07T11:19:40+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/IVRAR_Project/posts/week5/</loc>
+    <lastmod>2024-12-01T11:19:40+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/IVRAR_Project/posts/week4/</loc>
+    <lastmod>2024-11-25T11:19:40+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/IVRAR_Project/posts/week3/</loc>
+    <lastmod>2024-11-15T11:19:40+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/IVRAR_Project/posts/week2/</loc>
+    <lastmod>2024-11-10T11:19:40+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/IVRAR_Project/posts/week1/</loc>
-    <lastmod>2024-11-06T11:19:40+01:00</lastmod>
+    <lastmod>2024-11-02T11:19:40+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/IVRAR_Project/posts/week0/</loc>
+    <lastmod>2024-11-01T11:19:40+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/IVRAR_Project/categories/</loc>
   </url><url>

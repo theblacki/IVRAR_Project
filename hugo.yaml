@@ -1,9 +1,20 @@
-baseURL: https://example.org/
 languageCode: en-us
+enableEmoji: true
 params:
+  author: Christian Goebel
   contact:
     email: christian.goebel@stud.tu-darmstadt.de
-  subtitle: Locomotion and Interaction in XR - Project
-title: IVRAR Project
+  subtitle: Locomotion and Interaction in XR - IVRAR Project
+  homeInfoParams:
+    Title: "TeleRollingBoard"
+    Content: >
+      Welcome to my IVRAR Project Blog.
+
+      - This blog documents the project development, execution and results.
+
+      - Link to the [project github](https://github.com/theblacki/IVRAR_Parkour "Source Code of the Parcour")
+
+      - Link to the [project APK](https://drive.google.com/file/d/1G9ZJ-doMZP7x57ws2eCt61isyzS2skAe/view?usp=sharing "Deployable APK for the Meta Quest")
+title: TeleRollingBoard Parcour - Project Blog
 theme: ["PaperMod"]
 baseURL: https://theblacki.github.io/IVRAR_Project

@@ -5,11 +5,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Categories | TeleRollingBoard Parcour - Project Blog</title>
+<title>Week 8 - The Follow-after Feature and actual Visuals | TeleRollingBoard Parcour - Project Blog</title>
 <meta name="keywords" content="">
-<meta name="description" content="">
+<meta name="description" content="The Follow-after Feature and actual Visuals
+The report presentation - or rather the discussion thereafter gave me some new ideas to work on, some of which I started on this week.
+Hand Poses
+As mentioned in the presentation slides, I was inspired by the reverse classroom topic of another student and wanted to get hand poses for my TeleRollingBoard, meaning positions and orientations of the hands grabbing onto it.
+As it turns out, those don&rsquo;t quite work when you use the controllers (visuals) - obviously - but I only thought of that after getting the creation of hand poses working - which differs heavily from how it was shown in the reverse classroom to the way it works now and with the Meta XR All-In-One Kit.">
 <meta name="author" content="Christian Goebel">
-<link rel="canonical" href="http://localhost:1313/IVRAR_Project/categories/">
+<link rel="canonical" href="http://localhost:1313/IVRAR_Project/posts/week8/">
 <link crossorigin="anonymous" href="/IVRAR_Project/assets/css/stylesheet.54405a410796490bc874ab6181fac9b675753cc2b91375d8f882566459eca428.css" integrity="sha256-VEBaQQeWSQvIdKthgfrJtnV1PMK5E3XY&#43;IJWZFnspCg=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/IVRAR_Project/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/IVRAR_Project/favicon-16x16.png">
@@ -18,8 +22,7 @@
 <link rel="mask-icon" href="http://localhost:1313/IVRAR_Project/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/IVRAR_Project/categories/index.xml">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/IVRAR_Project/categories/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/IVRAR_Project/posts/week8/">
 <noscript>
     <style>
         #theme-toggle,
@@ -59,7 +62,7 @@
 </noscript>
 </head>
 
-<body class="list" id="top">
+<body class="" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -103,12 +106,46 @@
     </nav>
 </header>
 <main class="main">
-<header class="page-header">
-    <h1>Categories</h1>
-</header>
 
-<ul class="terms-tags">
-</ul>
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Week 8 - The Follow-after Feature and actual Visuals
+    </h1>
+    <div class="post-meta"><span title='2024-12-23 11:19:40 +0100 CET'>December 23, 2024</span>&nbsp;·&nbsp;Christian Goebel
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="the-follow-after-feature-and-actual-visuals">The Follow-after Feature and actual Visuals<a hidden class="anchor" aria-hidden="true" href="#the-follow-after-feature-and-actual-visuals">#</a></h1>
+<p>The report presentation - or rather the discussion thereafter gave me some new ideas to work on, some of which I started on this week.</p>
+<h2 id="hand-poses">Hand Poses<a hidden class="anchor" aria-hidden="true" href="#hand-poses">#</a></h2>
+<p>As mentioned in the presentation slides, I was inspired by the reverse classroom topic of another student and wanted to get hand poses for my TeleRollingBoard, meaning positions and orientations of the hands grabbing onto it.</p>
+<p>As it turns out, those don&rsquo;t quite work when you use the controllers (visuals) - obviously - but I only thought of that after getting the creation of hand poses working - which differs heavily from how it was shown in the reverse classroom to the way it works now and with the Meta XR All-In-One Kit.</p>
+<p>Well, another task for the backlog. For now, I had other features that were more important.</p>
+<h2 id="the-follow-after-feature">The Follow-after Feature<a hidden class="anchor" aria-hidden="true" href="#the-follow-after-feature">#</a></h2>
+<p>One of the features suggested after the presentation was to have the player follow after the board trajectory after throwing instead of just teleporting to it. To make that happen I once again used a position queue of the board - a different one than that for the throwing mechanic as they behave differently.</p>
+<p>The first implementation only made the player follow after the board on the ground (as in, the y-positions were all set to the player&rsquo;s height), but I threw that idea away before I even got to tackle problems like uneven ground - it just didn&rsquo;t make as much fun as following after the board in the air, and it didn&rsquo;t help against motion sickness as much as I expected. That may be a me-thing though, as I just had no problems with motion sickness at all during my debug- and gameplay sessions - with or without ground-projection.</p>
+<p>So instead I made the player teleport to the actual former positions of the board. Problem with that was that the board&rsquo;s center is barely above the ground, which when translating it 1 to 1 to the players position means that the latter gets stuck in the ground more often than not, which the RigidBody <em>tries</em> to fix. Semi-Successfully so.</p>
+<p>Because of that, I included an actual teleportation method for the Player (though in the TeleRollingBoard script), which uses a <em>Raycast</em> to look whether there&rsquo;s even enough space for the player and increases the teleportation position by half of the player&rsquo;s height when something is hit.</p>
+<p>Lastly, the collection of all the board&rsquo;s positions made it that following the board through collisions and slowly petering out made the feature rather discomforting and boring respectively. My first idea was to smooth those values out of the queue, but luckily I thought of a less complex solution before implementing it. That being to only record new positions if they&rsquo;re a minimal distance away from the last.</p>
+<p>That worked surprisingly well for both problems.</p>
+<h2 id="telerollingboard-visuals">TeleRollingBoard Visuals<a hidden class="anchor" aria-hidden="true" href="#telerollingboard-visuals">#</a></h2>
+<p>The last thing I wanted to tackle before going into my well-deserved winter break was the TeleRollingBoard&rsquo;s appearance - that currently being a scaled basic 3D cube.</p>
+<p>After unseccessfully searching for something that looked like a nice, flat, futuristic teleporter in the free unity assets, I decided to just make it myself instead.</p>
+<p>For that, I used a hexagon model from a strategy game toolkit I used before in another project, took the wheels from a free skateboard asset and put all of them together to create a somewhat futuristic-ish, but final TeleRollingBoard. I also put one of those halos that were on all the coins onto the center of the top-level hexagon and made it blue.</p>
+<p><img alt="New TeleRollingBoard Visuals" loading="lazy" src="https://raw.githubusercontent.com/theblacki/IVRAR_Project/master/static/img/week8/TRBvisuals.png" title="Screenshot of the TeleRollingBoard in the game scene"></p>
+<p>Very futuristic, very realistic, incredible visuals, 10/10 - if I may say so myself.</p>
+<p>Also, I put the rolling/sliding physics material I used before on all the wheels, and put one with much more friction on the hexagon.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
     </main>
     
 <footer class="footer">
